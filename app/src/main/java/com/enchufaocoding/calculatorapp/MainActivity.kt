@@ -8,6 +8,7 @@ import android.widget.EditText
 class MainActivity : AppCompatActivity() {
 
     lateinit var editText : EditText
+    var number1 : Float = 0.0f
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,6 +69,27 @@ class MainActivity : AppCompatActivity() {
             R.id.button_dot -> {
                 val number = editText.text.toString() + "."
                 editText.setText(number)
+            }
+
+            R.id.button_clear -> {
+                editText.setText("")
+            }
+
+            R.id.button_plus -> {
+                number1 = editText.text.toString().toFloat()
+                editText.setText("")
+            }
+
+            R.id.button_equal -> {
+                val number2 = editText.text.toString().toFloat()
+                val result = number1 + number2
+                editText.setText(result.toString())
+            }
+
+            R.id.button_minus -> {
+                val number2 = editText.text.toString().toFloat()
+                val result = number1 + number2
+                editText.setText(result.toString())
             }
 
         }
