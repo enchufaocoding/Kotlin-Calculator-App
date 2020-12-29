@@ -1,5 +1,5 @@
 ## Kotlin-Calculator-App
-# Calculator Made in 100% Kotlin!
+# Calculator Made 100% in Kotlin Languaje!
 
 This project belongs to the practice done for learning Kotlin several months ago.
 
