@@ -52,6 +52,8 @@
                 />
 
             <Button
+                android:id="@+id/button_divide"
+                android:onClick="operationFunction"
                 android:text="@string/button_divide"
                 android:layout_marginRight="@dimen/margin_eight"
                 android:layout_marginEnd="@dimen/margin_eight"
